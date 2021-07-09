@@ -55,16 +55,17 @@ function draw() {
   var select_balloon = Math.round(random(1,4));
   
   if (World.frameCount % 100 == 0) {
-    if (select_balloon == 1) {
-      redBalloon();
-    } else if (select_balloon == 2) {
-      greenBalloon();
-    } else if (select_balloon == 3) {
-      blueBalloon();
-    } else {
-      pinkBalloon();
-    }
-  }  
+   switch(select_balloon ){
+    case 1: redBalloon();
+    break;
+    case 2:blueBalloon();
+    break;
+    case 3:pinkBalloon();
+    break;
+    case 4:greenBalloon();
+    break;
+    default:break;
+  }}
     
   drawSprites();
   text("Score: "+ score, 300,50);
