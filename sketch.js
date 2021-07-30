@@ -68,7 +68,6 @@ function draw() {
   }}
     
   drawSprites();
-  text("Score: "+ score, 300,50);
 }
 
 
