@@ -1,6 +1,6 @@
 var bow , arrow,  scene;
 var bowImage, arrowImage, green_balloonImage, red_balloonImage, pink_balloonImage ,blue_balloonImage, backgroundImage;
-
+var select_balloon=1
 var score=0;
 
 function preload(){
@@ -51,21 +51,51 @@ function draw() {
     
   }
    
-  //creating continous enemies
-  var select_balloon = Math.round(random(1,4));
+  //Uncomment correct option to get random number from 1 to 4 
+   // select_balloon = Math.round(random(1,4));
+   // select_balloon = random(1,4);
+   // select_balloon = Math.round(random());
+   // select_balloon = Math.round(random(1,4,2));
   
-  if (World.frameCount % 100 == 0) {
-   switch(select_balloon ){
-    case 1: redBalloon();
-    break;
-    case 2:blueBalloon();
-    break;
-    case 3:pinkBalloon();
-    break;
-    case 4:greenBalloon();
-    break;
-    default:break;
-  }}
+   if (World.frameCount % 100 == 0) {
+
+    //uncomment the correct switch statement
+
+            // switch(select_balloon ){
+            // case 1: redBalloon();
+            // case 2:blueBalloon();
+            // case 3:pinkBalloon();
+            // case 4:greenBalloon();
+            // default:break;
+            // }
+
+
+            // switch(select_balloon ){
+            // case 1: redBalloon();
+            // break;
+            // case 2:blueBalloon();
+            // break;
+            // case 3:pinkBalloon();
+            // break;
+            // case 4:greenBalloon();
+            // break;
+            // default:break;
+            // }
+
+
+            // switch(select_balloon ){
+            // case 1: redBalloon();
+            // break;
+            // case 1:blueBalloon();
+            // break;
+            // case 1:pinkBalloon();
+            // break;
+            // case 1:greenBalloon();
+            // break;
+            // default:break;
+            // }
+
+}
     
   drawSprites();
 }
